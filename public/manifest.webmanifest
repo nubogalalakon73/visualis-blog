@@ -1,0 +1,17 @@
+{
+  "name": "Visualis Journal",
+  "short_name": "Visualis",
+  "description": "A design journal from Jakarta — essays on typography, layout, colour, and studio process.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f2e9",
+  "theme_color": "#f5f2e9",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

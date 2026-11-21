@@ -1,0 +1,220 @@
+/* DO NOT CHANGE */
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+/* DO NOT CHANGE */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Project theme — Neobrutalism Minimalism */
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-display: "Archivo Black", "Space Grotesk", ui-sans-serif, sans-serif;
+
+  --color-ink: #131310;
+  --color-paper: #f5f2e9;
+  --color-paper-deep: #ece7d9;
+  --color-lime: #dff25b;
+  --color-sky: #a9c6f5;
+  --color-coral: #ff9e80;
+  --color-butter: #ffd75e;
+  --color-lilac: #c9b8f5;
+}
+
+/* CHANGE VALUES FOR THEME */
+:root {
+  --radius: 0rem;
+  --background: #f5f2e9;
+  --foreground: #131310;
+  --card: #fbf9f3;
+  --card-foreground: #131310;
+  --popover: #fbf9f3;
+  --popover-foreground: #131310;
+  --primary: #131310;
+  --primary-foreground: #f5f2e9;
+  --secondary: #ece7d9;
+  --secondary-foreground: #131310;
+  --muted: #ece7d9;
+  --muted-foreground: #5d584c;
+  --accent: #dff25b;
+  --accent-foreground: #131310;
+  --destructive: #d64a2f;
+  --border: #131310;
+  --input: #131310;
+  --ring: #131310;
+  --chart-1: #dff25b;
+  --chart-2: #a9c6f5;
+  --chart-3: #ff9e80;
+  --chart-4: #ffd75e;
+  --chart-5: #c9b8f5;
+  --sidebar: #fbf9f3;
+  --sidebar-foreground: #131310;
+  --sidebar-primary: #131310;
+  --sidebar-primary-foreground: #f5f2e9;
+  --sidebar-accent: #ece7d9;
+  --sidebar-accent-foreground: #131310;
+  --sidebar-border: #131310;
+  --sidebar-ring: #131310;
+}
+
+.dark {
+  --background: #131310;
+  --foreground: #f5f2e9;
+  --card: #1d1d19;
+  --card-foreground: #f5f2e9;
+  --popover: #1d1d19;
+  --popover-foreground: #f5f2e9;
+  --primary: #f5f2e9;
+  --primary-foreground: #131310;
+  --secondary: #26261f;
+  --secondary-foreground: #f5f2e9;
+  --muted: #26261f;
+  --muted-foreground: #b4ae9e;
+  --accent: #dff25b;
+  --accent-foreground: #131310;
+  --destructive: #ff8a70;
+  --border: #f5f2e9;
+  --input: #f5f2e9;
+  --ring: #dff25b;
+  --sidebar: #1d1d19;
+  --sidebar-foreground: #f5f2e9;
+  --sidebar-primary: #dff25b;
+  --sidebar-primary-foreground: #131310;
+  --sidebar-accent: #26261f;
+  --sidebar-accent-foreground: #f5f2e9;
+  --sidebar-border: #f5f2e9;
+  --sidebar-ring: #dff25b;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    /* Square corners are part of the design system, including for UI primitives. */
+    border-radius: 0 !important;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--color-lime);
+    color: var(--color-ink);
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+  }
+  .label {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .shadow-brutal {
+    box-shadow: 4px 4px 0 0 var(--color-ink);
+  }
+  .shadow-brutal-sm {
+    box-shadow: 2px 2px 0 0 var(--color-ink);
+  }
+  .shadow-brutal-lg {
+    box-shadow: 8px 8px 0 0 var(--color-ink);
+  }
+  .brutal-lift {
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+  .brutal-lift:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 0 var(--color-ink);
+  }
+  .pattern-dots {
+    background-image: radial-gradient(var(--color-ink) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+  .pattern-rule {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      currentColor 0,
+      currentColor 2px,
+      transparent 2px,
+      transparent 8px
+    );
+  }
+  .animate-ticker {
+    animation: ticker 32s linear infinite;
+  }
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker {
+    animation: none;
+  }
+  .brutal-lift {
+    transition: none;
+  }
+}
