@@ -15,6 +15,7 @@ const AuthPage = lazy(() => import("./pages/Auth.tsx"));
 const PostPage = lazy(() => import("./pages/Post.tsx"));
 const TagsPage = lazy(() => import("./pages/Tags.tsx"));
 const TagPage = lazy(() => import("./pages/Tag.tsx"));
+const Library = lazy(() => import("./pages/Library.tsx"));
 const Studio = lazy(() => import("./pages/Studio.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
@@ -134,6 +135,7 @@ createRoot(document.getElementById("root")!).render(
               <Route path="/posts/:slug" element={<PostPage />} />
               <Route path="/tags" element={<TagsPage />} />
               <Route path="/tags/:tag" element={<TagPage />} />
+              <Route path="/library" element={<Library />} />
               <Route path="/auth" element={<AuthPage redirectAfterAuth="/studio" />} />
               <Route
                 path="/studio"

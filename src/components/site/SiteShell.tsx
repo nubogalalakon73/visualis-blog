@@ -8,6 +8,7 @@ import { useAuth } from "@/hooks/use-auth";
 const NAV = [
   { to: "/", label: "Journal" },
   { to: "/tags", label: "Tags" },
+  { to: "/library", label: "Library" },
   { to: "/studio", label: "Studio" },
 ];
 
@@ -177,6 +178,11 @@ export function SiteFooter() {
               <li>
                 <Link to="/tags" className="text-paper/80 transition-colors hover:text-lime">
                   Browse tags
+                </Link>
+              </li>
+              <li>
+                <Link to="/library" className="text-paper/80 transition-colors hover:text-lime">
+                  Members&apos; downloads
                 </Link>
               </li>
               <li>

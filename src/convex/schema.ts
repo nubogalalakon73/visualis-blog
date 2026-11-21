@@ -50,6 +50,20 @@ const schema = defineSchema(
       .index("by_slug", ["slug"])
       .index("by_status", ["status"])
       .index("by_published", ["publishedAt"]),
+
+    // member-only downloadable working files
+    resources: defineTable({
+      title: v.string(),
+      slug: v.string(),
+      description: v.string(),
+      category: v.string(),
+      fileType: v.union(v.literal("md"), v.literal("csv")),
+      fileName: v.string(),
+      content: v.string(),
+      order: v.number(),
+      downloadCount: v.number(),
+      updatedAt: v.number(),
+    }).index("by_slug", ["slug"]),
   },
   {
     schemaValidation: false,

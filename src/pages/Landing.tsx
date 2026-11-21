@@ -3,12 +3,20 @@ import { PostRow } from "@/components/blog/PostRow";
 import { TagPill } from "@/components/blog/TagPill";
 import { SiteShell } from "@/components/site/SiteShell";
 import { api } from "@/convex/_generated/api";
+import { useAuth } from "@/hooks/use-auth";
 import { useJournal } from "@/hooks/use-journal";
+import { useResources } from "@/hooks/use-resources";
 import { formatDate, postPath, tagPath } from "@/lib/journal";
 import { cn } from "@/lib/utils";
 import { useQuery } from "convex/react";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Asterisk } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Asterisk,
+  Download,
+  Lock,
+} from "lucide-react";
 import { Link } from "react-router";
 
 const TICKER = [
@@ -32,6 +40,8 @@ const TAG_TONES = [
 export default function Landing() {
   const posts = useJournal();
   const tags = useQuery(api.posts.tagCounts, {});
+  const resources = useResources();
+  const { isAuthenticated } = useAuth();
   const featured = posts?.[0];
   const rest = posts?.slice(1) ?? [];
 
@@ -286,6 +296,90 @@ export default function Landing() {
             {!tags && (
               <div className="h-24 animate-pulse border-2 border-ink/20 bg-paper" />
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Members' shelf */}
+      <section className="border-t-2 border-ink">
+        <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-8 sm:py-20">
+          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <div>
+              <p className="label text-[9px] text-muted-foreground">
+                For members — downloads
+              </p>
+              <h2 className="mt-3 font-display text-4xl sm:text-5xl">
+                The working shelf.
+              </h2>
+              <p className="mt-4 max-w-md font-serif text-lg leading-relaxed text-muted-foreground">
+                Grid specs, sprint agendas, type scales, and colour audit logs.
+                Free with an account, delivered as plain text you can edit.
+              </p>
+              <Link
+                to="/library"
+                className="label mt-6 inline-flex items-center gap-2 border-2 border-ink bg-ink px-5 py-3.5 text-[10px] text-paper shadow-brutal transition-all hover:-translate-y-0.5 hover:bg-lime hover:text-ink"
+              >
+                Browse the shelf
+                <ArrowUpRight className="size-4" />
+              </Link>
+              <p className="mt-3 font-serif text-sm italic text-muted-foreground">
+                {isAuthenticated
+                  ? "Your member access is active."
+                  : "Sign in — or continue as a guest — to unlock every file."}
+              </p>
+            </div>
+
+            <div className="border-2 border-ink bg-card shadow-brutal-sm">
+              <div className="flex items-center justify-between border-b-2 border-ink bg-ink px-4 py-2.5 text-paper">
+                <span className="label text-[9px] text-lime">Members&apos; shelf</span>
+                <span className="label text-[9px] text-paper/70">
+                  {resources ? `${resources.length} files` : "Loading…"}
+                </span>
+              </div>
+              {resources ? (
+                resources.slice(0, 4).map((resource, index) => (
+                  <Link
+                    key={resource.slug}
+                    to="/library"
+                    className="flex items-center justify-between gap-4 border-b border-ink/15 px-4 py-3.5 transition-colors last:border-b-0 hover:bg-paper-deep/60"
+                  >
+                    <div className="flex min-w-0 items-center gap-3">
+                      <span className="label shrink-0 text-[8px] text-muted-foreground">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <div className="min-w-0">
+                        <p className="truncate font-sans text-sm font-semibold">
+                          {resource.title}
+                        </p>
+                        <p className="label mt-1 text-[8px] text-muted-foreground">
+                          {resource.category} · .{resource.fileType}
+                        </p>
+                      </div>
+                    </div>
+                    <span className="grid size-8 shrink-0 place-items-center border-2 border-ink bg-paper">
+                      {isAuthenticated ? (
+                        <Download className="size-3.5" />
+                      ) : (
+                        <Lock className="size-3.5" />
+                      )}
+                    </span>
+                  </Link>
+                ))
+              ) : (
+                <div className="space-y-2 p-3">
+                  {[0, 1, 2].map((item) => (
+                    <div key={item} className="h-12 animate-pulse bg-paper-deep" />
+                  ))}
+                </div>
+              )}
+              <Link
+                to="/library"
+                className="label flex items-center justify-between gap-2 border-t-2 border-ink bg-lime px-4 py-3 text-[9px] transition-colors hover:bg-ink hover:text-paper"
+              >
+                Browse the full shelf
+                <ArrowRight className="size-3.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

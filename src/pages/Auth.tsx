@@ -136,8 +136,8 @@ function Auth({ redirectAfterAuth }: AuthProps = {}) {
           <ul className="mt-10 space-y-3 border-t border-paper/20 pt-6">
             {[
               "Draft essays and save them privately",
-              "File each post under a working tag",
               "Publish straight to the journal",
+              "Download every file on the members' shelf",
             ].map((item) => (
               <li
                 key={item}
@@ -197,7 +197,8 @@ function Auth({ redirectAfterAuth }: AuthProps = {}) {
                   </h1>
                   <p className="mt-3 font-serif text-lg leading-relaxed text-muted-foreground">
                     Enter your email and we will send a one-time code. New here?
-                    The same code creates your account.
+                    The same code creates your account and unlocks the members'
+                    shelf.
                   </p>
 
                   <form onSubmit={handleEmailSubmit} className="mt-7">
