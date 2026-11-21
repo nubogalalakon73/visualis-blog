@@ -8,7 +8,8 @@
 Hostinger shared hosting hanya perlu menyajikan file statis. Tidak perlu Node.js server
 di Hostinger. Semua query, login, dan download tetap diproses oleh Convex.
 
-> Ini bukan tema WordPress. Untuk versi WordPress, dibutuhkan paket tema terpisah.
+> Ini bukan tema WordPress. Untuk versi WordPress di Hostinger, gunakan paket terpisah
+> `visualis-journal-theme.zip` dan ikuti `PANDUAN.md` di dalamnya.
 
 ---
 

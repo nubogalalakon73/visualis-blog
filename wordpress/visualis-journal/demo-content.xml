@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Visualis Journal demo content. Import with Tools > Import > WordPress. -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+	<channel>
+		<title>Visualis Journal Demo</title>
+		<link>https://example.com</link>
+		<description>Demo essays and pages for Visualis Journal.</description>
+		<language>en-US</language>
+		<wp:wxr_version>1.2</wp:wxr_version>
+		<wp:base_site_url>https://example.com</wp:base_site_url>
+		<wp:base_blog_url>https://example.com</wp:base_blog_url>
+
+		<wp:author>
+			<wp:author_id>1</wp:author_id>
+			<wp:author_login><![CDATA[admin]]></wp:author_login>
+			<wp:author_email><![CDATA[admin@example.com]]></wp:author_email>
+			<wp:author_display_name><![CDATA[Visualis Studio]]></wp:author_display_name>
+			<wp:author_first_name><![CDATA[Visualis]]></wp:author_first_name>
+			<wp:author_last_name><![CDATA[Studio]]></wp:author_last_name>
+		</wp:author>
+
+		<item>
+			<title>The grid is a promise, not a cage</title>
+			<link>https://example.com/the-grid-is-a-promise/</link>
+			<pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?p=101</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>Every layout begins with a small act of faith: that someone will give us ninety seconds of their attention. A grid is how we keep that promise.</p>
+<h2>Start with the reading order</h2>
+<p>Before we draw a single column, we write the page as a list: headline, standfirst, image, caption, proof, action. If the list does not make sense read aloud, no grid will rescue it.</p>
+<blockquote><p>A grid is not a cage. It is a promise that the reader will always know where to look next.</p></blockquote>
+<h2>Break it on purpose</h2>
+<p>Rules earn their keep when they are broken with reason. We let a headline cross two gutters when it is the only idea on the page. The break should read as emphasis, not accident.</p>
+<ul><li><strong>One idea per section.</strong></li><li><strong>Three widths, no more.</strong></li><li><strong>Test with the longest headline.</strong></li></ul>
+<p>The test is simple. Cover the design and ask whether the reading order still holds.</p>]]></content:encoded>
+			<excerpt:encoded><![CDATA[A grid is not a cage for ideas. It is a promise that the reader will always know where to look next.]]></excerpt:encoded>
+			<wp:post_id>101</wp:post_id>
+			<wp:post_date>2026-11-12 09:00:00</wp:post_date>
+			<wp:post_date_gmt>2026-11-12 09:00:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>the-grid-is-a-promise</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>post</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="post_tag" nicename="layout"><![CDATA[Layout]]></category>
+			<category domain="post_tag" nicename="process"><![CDATA[Process]]></category>
+			<category domain="category" nicename="essays"><![CDATA[Essays]]></category>
+		</item>
+
+		<item>
+			<title>Type at the edge of legibility</title>
+			<link>https://example.com/type-at-the-edge-of-legibility/</link>
+			<pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?p=102</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>Type has two lives. One is to be looked at; the other is to be read. Most of our arguments in the studio are about which life a particular line is living.</p>
+<h2>Reading is a physical act</h2>
+<p>At 16px, a reader's eye lands four to seven times per line. Too wide, and the return sweep gets lost. Too tight, and the line breaks in the middle of an idea.</p>
+<blockquote><p>Legibility is not the opposite of personality. It is the condition that lets personality be trusted.</p></blockquote>
+<h2>Set the small things well</h2>
+<p>Footnotes, captions, and form labels are where typography tells the truth. A studio that sets a beautiful cover but a careless error message has shown you its priorities.</p>
+<p>Good type does not announce itself. It simply makes the next sentence easier to start.</p>]]></content:encoded>
+			<excerpt:encoded><![CDATA[The best typography is not the loudest. It is the one that disappears at exactly the right moment.]]></excerpt:encoded>
+			<wp:post_id>102</wp:post_id>
+			<wp:post_date>2026-10-28 09:00:00</wp:post_date>
+			<wp:post_date_gmt>2026-10-28 09:00:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>type-at-the-edge-of-legibility</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>post</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="post_tag" nicename="typography"><![CDATA[Typography]]></category>
+			<category domain="post_tag" nicename="craft"><![CDATA[Craft]]></category>
+			<category domain="category" nicename="essays"><![CDATA[Essays]]></category>
+		</item>
+
+		<item>
+			<title>Colour with a job to do</title>
+			<link>https://example.com/colour-with-a-job-to-do/</link>
+			<pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?p=103</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>Most colour conversations start with a reference: a photograph, a fabric, a sunset. Ours start with a list of jobs.</p>
+<h2>Four jobs, four decisions</h2>
+<p>Colour has to signal action, separate regions, soften a hard edge, and sometimes stop a reader completely. Those are different jobs, and they rarely want the same hue.</p>
+<blockquote><p>A palette becomes a system when you can name what each colour is for, not when you can name what it is.</p></blockquote>
+<h2>Budget your saturation</h2>
+<p>One saturated colour per view is usually enough. The mistake is letting every tag, badge, and illustration compete. Most of the time, black and paper do the work.</p>
+<p>Colour should feel inevitable after the fact, not impressive during the pitch.</p>]]></content:encoded>
+			<excerpt:encoded><![CDATA[A palette is not a mood board. It is a set of jobs — signal, separate, soften, stop.]]></excerpt:encoded>
+			<wp:post_id>103</wp:post_id>
+			<wp:post_date>2026-10-09 09:00:00</wp:post_date>
+			<wp:post_date_gmt>2026-10-09 09:00:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>colour-with-a-job-to-do</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>post</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="post_tag" nicename="color"><![CDATA[Color]]></category>
+			<category domain="post_tag" nicename="systems"><![CDATA[Systems]]></category>
+			<category domain="category" nicename="essays"><![CDATA[Essays]]></category>
+		</item>
+
+		<item>
+			<title>Neobrutalism grew up</title>
+			<link>https://example.com/neobrutalism-grew-up/</link>
+			<pubDate>Sun, 02 Aug 2026 09:00:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?p=104</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>Every few years the internet rediscovers hard borders and flat colour. The first wave is always a parody. Then the style settles down and becomes useful.</p>
+<h2>What the style is actually good at</h2>
+<p>Neobrutalism makes hierarchy physical. A border says this is a thing. A shadow says this thing sits above that thing. A flat colour says this block has one job.</p>
+<blockquote><p>Brutalism without editing is just noise with a drop shadow. The minimalism is what makes the loud parts land.</p></blockquote>
+<h2>The mature version</h2>
+<p>The mature version is not a mood. It is a set of commitments: readable contrast, honest surfaces, visible hierarchy, and no fake depth.</p>
+<p>Trends are useful when they give you a vocabulary for a decision you already wanted to make. The rest is costume.</p>]]></content:encoded>
+			<excerpt:encoded><![CDATA[Hard borders and flat colour are not a costume. Used with restraint, they make hierarchy unmistakable.]]></excerpt:encoded>
+			<wp:post_id>104</wp:post_id>
+			<wp:post_date>2026-08-02 09:00:00</wp:post_date>
+			<wp:post_date_gmt>2026-08-02 09:00:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>neobrutalism-grew-up</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>post</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="post_tag" nicename="trends"><![CDATA[Trends]]></category>
+			<category domain="post_tag" nicename="craft"><![CDATA[Craft]]></category>
+			<category domain="category" nicename="essays"><![CDATA[Essays]]></category>
+		</item>
+
+		<item>
+			<title>Journal</title>
+			<link>https://example.com/journal/</link>
+			<pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?page_id=201</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded>
+			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+			<wp:post_id>201</wp:post_id>
+			<wp:post_date>2026-11-02 09:00:00</wp:post_date>
+			<wp:post_date_gmt>2026-11-02 09:00:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>journal</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>page</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+		</item>
+
+		<item>
+			<title>Library</title>
+			<link>https://example.com/library/</link>
+			<pubDate>Mon, 02 Nov 2026 09:05:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?page_id=202</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>Working files, templates, and checklists from the studio. Published for members, updated when we learn something.</p>]]></content:encoded>
+			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+			<wp:post_id>202</wp:post_id>
+			<wp:post_date>2026-11-02 09:05:00</wp:post_date>
+			<wp:post_date_gmt>2026-11-02 09:05:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>library</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>page</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page-library.php]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+
+		<item>
+			<title>Studio</title>
+			<link>https://example.com/studio/</link>
+			<pubDate>Mon, 02 Nov 2026 09:10:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?page_id=203</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>A quiet room for drafts. Write, revise, and publish when the piece is ready.</p>]]></content:encoded>
+			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+			<wp:post_id>203</wp:post_id>
+			<wp:post_date>2026-11-02 09:10:00</wp:post_date>
+			<wp:post_date_gmt>2026-11-02 09:10:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>studio</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>page</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page-studio.php]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+
+		<item>
+			<title>Tags</title>
+			<link>https://example.com/tags/</link>
+			<pubDate>Mon, 02 Nov 2026 09:15:00 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://example.com/?page_id=204</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>Every thread in the journal, from layout to studio process.</p>]]></content:encoded>
+			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+			<wp:post_id>204</wp:post_id>
+			<wp:post_date>2026-11-02 09:15:00</wp:post_date>
+			<wp:post_date_gmt>2026-11-02 09:15:00</wp:post_date_gmt>
+			<wp:comment_status>closed</wp:comment_status>
+			<wp:ping_status>closed</wp:ping_status>
+			<wp:post_name>tags</wp:post_name>
+			<wp:status>publish</wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type>page</wp:post_type>
+			<wp:post_password></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page-tags.php]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+	</channel>
+</rss>
